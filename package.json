@@ -1,0 +1,23 @@
+{
+	"name": "node-ts",
+	"version": "0.0.0",
+	"author": "dayblox",
+	"description": "Node.js & TypeScript starter",
+	"engines": {
+		"node": ">=18.11",
+		"pnpm": ">=7.27"
+	},
+	"scripts": {
+		"dev": "pnpm /dev:.*/",
+		"dev:build": "esbuild dev.ts ./src --bundle --outdir=dist --packages=external --platform=node --sourcemap --watch",
+		"dev:run": "node --inspect --no-warnings --loader ./dist/dev.js --watch dist/src",
+		"build": "esbuild index=./src --bundle --minify --outdir=dist --packages=external --platform=node",
+		"start": "node dist"
+	},
+	"dependencies": {
+		"esbuild": "^0.17.16"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.11"
+	}
+}

@@ -1,0 +1,22 @@
+{
+  // #region Formatter
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.rome": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  // #endregion
+  // #region Debugger
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "debug.internalConsoleOptions": "openOnSessionStart"
+  // #endregion
+}
